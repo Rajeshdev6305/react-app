@@ -1,14 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import TASK1 from "./task1";
-import TASK2 from "./task2";
-import DIVCARD from "./divcard";
-import HOME from "./homecomp";
-import "bootstrap/dist/css/bootstrap.min.css";
-import ACcordion from "./accordioncomp";
 
 const products = [
   [
@@ -221,30 +210,86 @@ const products = [
   ],
 ];
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    {/* <App />  */}
-    {/* <TASK1/>
-    <TASK2/> */}
-    {/* <DIVCARD/> */}
-    {products.flat().map((a, b) => {
-      return (
-        <ACcordion
-          title={a.title}
-          info={a.description}
-          price={a.price}
-          id={a.id}
-          category={a.category}
-          image={a.image}
-        />
-      );
-    })}
-    {/* <HOME/> */}
-  </React.StrictMode>
-);
+function MAIN() {
+  return (
+    <div
+      style={{
+        display: "flex",
+        gap: "20px",
+        padding : "10px",
+        backgroundColor: "aqua",
+        flexWrap: "wrap",
+        justifyContent: "center",
+      }}
+    >
+      {products.flat().map((a, b) => {
+        return (
+          <div
+            key={a.id} 
+            style={{
+              display: "flex",
+              backgroundColor: "orange",
+              flexDirection: "column",
+              width: "250px",
+              height: "auto",
+              borderRadius: "25px",
+              gap: "0px",
+              alignItems: "center",
+              justifyContent: "space-around",
+            }}
+          >
+             <img style={{height: "200px",width: "150px", borderRadius: "20px",marginTop: "20px"}} src={a.image} alt={a.title}></img>
+             <h4>{a.id}</h4>
+            <h3 style={{color: "#ffede"}}>{a.title}</h3>
+            <h4>{a.price}</h4>
+            <h4>{a.category}</h4>
+            
+                     </div>
+        );
+      })}
+    </div>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+// function MAIN() {
+//   return (
+//     <div>
+//       <table style={{border: "3px solid blue",borderCollapse: "collapse",}}>
+//         <thead>
+//           <tr>
+//             <th>ID</th>
+//             <th>Title</th>
+//             <th>Price ($)</th>
+//             <th>Description</th>
+//             <th>Category</th>
+//             <th>Rating</th>
+//             <th>Image</th>
+//           </tr>
+//         </thead>
+//         <tbody>
+//           {products.flat().map((a) => (
+//             <tr key={a.id}>
+//               <td>{a.id}</td>
+//               <td>{a.title}</td>
+//               <td>{a.price}</td> 
+//               <td>{a.description}</td>
+//               <td>{a.category}</td>
+//               <td>{a.rating.rate} ({a.rating.count} reviews)</td> 
+//               <td>
+//                 <img
+//                   src={a.image}
+//                   alt={a.title}
+//                   style={{ width: "50px", height: "50px" }}
+//                 />
+//               </td>
+//             </tr>
+//           ))}
+//         </tbody>
+//       </table>
+//     </div>
+//   );
+// }
+
+export default MAIN;
