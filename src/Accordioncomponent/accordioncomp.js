@@ -5,8 +5,8 @@ import Accordion from "react-bootstrap/Accordion";
 
 function ACcordion(props) {
   return (
-    <Accordion style={{display: "flex", }}>
-      <Accordion.Item style={{width: "300px",gap:"20px" }}>
+    <Accordion style={{}}>
+      <Accordion.Item style={{}}>
         <Accordion.Header >{props.title}</Accordion.Header>
         <Accordion.Body>{props.id}</Accordion.Body>
         <Accordion.Body>{props.price}</Accordion.Body>
@@ -25,3 +25,6 @@ function ACcordion(props) {
 }
 
 export default ACcordion;
+
+
+

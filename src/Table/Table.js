@@ -34,7 +34,7 @@ const DataTable = ({ data }) => {
   );
 };
 
-const TASK2 = () => {
+const Table = () => {
   const sampleData = [
     { id: 1, name: 'John Doe', age: 28, course: 'python', duration: '6 months' },
     { id: 2, name: 'Jane Smith', age: 34, course: 'java', duration: ' 5 months' },
@@ -51,5 +51,5 @@ const TASK2 = () => {
   );
 };
 
-export default TASK2;
+export default Table;
 

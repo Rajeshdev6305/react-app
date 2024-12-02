@@ -1,16 +1,17 @@
 import { Component } from "react";
-import FOOTER from "./footercomp";
+import FOOTER from "./Portfolio/footercomp";
 import HEADER from "./headercomp";
-import MAIN from "./maincomp";
-import ACcordion from "./accordioncomp";
+import MAIN from "./Portfolio/maincomp";
+import ACcordion from "./Accordioncomponent/accordioncomp";
 class HOME extends Component{
     render(){
         return(
             <div>
                 {/* <HEADER/>
-                <MAIN/>
+               
                 <FOOTER/> */}
                 {/* <ACcordion/> */}
+                <MAIN/>
             </div>
         )
     }
