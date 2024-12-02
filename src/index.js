@@ -248,7 +248,7 @@ root.render(
     })} */}
     {/* <HOME /> */}
     {/* <Parent login="admin"/> */}
-   {products.flat().map((a, b) => {
+   {products.flat().map((a, b) => { 
       return (
         <AccordionTable
           title={a.title}
