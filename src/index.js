@@ -252,7 +252,11 @@ root.render(
     })} */}
     {/* <HOME /> */}
     {/* <Parent login="admin"/> */}
+<<<<<<< HEAD
    {/* {products.flat().map((a, b) => { 
+=======
+   {/*{products.flat().map((a, b) => { 
+>>>>>>> 3616ef6d4ebcc27bd7c7f4cef371b6634aa6491b
       return (
         <AccordionTable
           title={a.title}
@@ -263,8 +267,13 @@ root.render(
           image={a.image}
         />
       );
+<<<<<<< HEAD
     })}  */}
     {/* <ToggleButton/> */}
+=======
+    })}*/} 
+    <ToggleButton/> 
+>>>>>>> 3616ef6d4ebcc27bd7c7f4cef371b6634aa6491b
 {/* <Counter/> */}
 {/* <UserForm/> */}
 {/* <EvenOddChecker/> */}
