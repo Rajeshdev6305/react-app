@@ -15,6 +15,10 @@ import ToggleButton from "./ToggleSwith/toggleswitch";
 import Counter from "./CounterAppcomponent/counter"
 import UserForm from "./UserFormcomponent/UserFormcomp";
 import EvenOddChecker from "./EvenOddChecker/EvenOddChecker";
+import Todolist from "./Todolistcomponent/Todolist";
+// import LifeCycle from "./LifeCycle/LifeCycle";
+import UpdatingPhase from "./UpdatingPhase/UpdatingPhase";
+
 
 const products = [
   [
@@ -248,7 +252,7 @@ root.render(
     })} */}
     {/* <HOME /> */}
     {/* <Parent login="admin"/> */}
-   {products.flat().map((a, b) => { 
+   {/* {products.flat().map((a, b) => { 
       return (
         <AccordionTable
           title={a.title}
@@ -259,11 +263,14 @@ root.render(
           image={a.image}
         />
       );
-    })} 
+    })}  */}
     {/* <ToggleButton/> */}
 {/* <Counter/> */}
 {/* <UserForm/> */}
 {/* <EvenOddChecker/> */}
+{/* <Todolist/> */}
+{/* <LifeCycle/> */}
+<UpdatingPhase/>
   </React.StrictMode>
 );
 

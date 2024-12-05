@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+// import LifeCycle from './Lifecycle/LifeCycle';
 
  function App() {
    return (
@@ -19,6 +20,7 @@ import './App.css';
          </a>
        </header>
      </div>
+    // <LifeCycle/>
    );
  }
 

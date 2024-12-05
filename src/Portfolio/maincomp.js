@@ -294,8 +294,9 @@ const data = [
 class MAIN extends Component {
   render() {
     return (
-      <div
+      <div 
         style={{
+          backgroundColor:"aqua",
           display: "flex",
           flexWrap: "wrap",
           gap: "20px",

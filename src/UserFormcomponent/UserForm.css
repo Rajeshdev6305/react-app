@@ -10,7 +10,7 @@
   
   .title {
     margin-bottom: 20px;
-    color: #333;
+    color: #FFF;
   }
   
   .form {
@@ -34,7 +34,7 @@
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid #FFF;
     border-radius: 4px;
   }
   
@@ -51,8 +51,8 @@
   .result {
     margin-top: 20px;
     padding: 15px;
-    background-color: #dff0d8;
-    color: #3c763d;
+    background-color: #3b3b3b;
+    color: #11dd14;
     border-radius: 4px;
   }
   
