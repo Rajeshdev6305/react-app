@@ -12,13 +12,14 @@ import ACcordion from "./Accordioncomponent/accordioncomp";
 import AccordionTable from "./AccordionTablecomponent/accordiontablecomp";
 import Parent from "./parentcomp";
 import ToggleButton from "./ToggleSwith/toggleswitch";
-import Counter from "./CounterAppcomponent/counter"
+import Counter from "./CounterAppcomponent/counter";
 import UserForm from "./UserFormcomponent/UserFormcomp";
 import EvenOddChecker from "./EvenOddChecker/EvenOddChecker";
 import Todolist from "./Todolistcomponent/Todolist";
 // import LifeCycle from "./LifeCycle/LifeCycle";
 import UpdatingPhase from "./UpdatingPhase/UpdatingPhase";
-
+import FunctionalCounter from "./FunctionalCounter/FunctionalCounter";
+import Calculator from "./Calculator/Calculator";
 
 const products = [
   [
@@ -234,7 +235,7 @@ const products = [
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-     {/* <App />   */}
+    {/* <App />   */}
     {/* <TASK1/>
     <Table/> */}
     {/* <DIVCARD/> */}
@@ -252,11 +253,9 @@ root.render(
     })} */}
     {/* <HOME /> */}
     {/* <Parent login="admin"/> */}
-<<<<<<< HEAD
-   {/* {products.flat().map((a, b) => { 
-=======
+    {/* <HEAD/> */}
+    {/* {products.flat().map((a, b) =
    {/*{products.flat().map((a, b) => { 
->>>>>>> 3616ef6d4ebcc27bd7c7f4cef371b6634aa6491b
       return (
         <AccordionTable
           title={a.title}
@@ -267,19 +266,16 @@ root.render(
           image={a.image}
         />
       );
-<<<<<<< HEAD
     })}  */}
     {/* <ToggleButton/> */}
-=======
-    })}*/} 
-    <ToggleButton/> 
->>>>>>> 3616ef6d4ebcc27bd7c7f4cef371b6634aa6491b
-{/* <Counter/> */}
-{/* <UserForm/> */}
-{/* <EvenOddChecker/> */}
-{/* <Todolist/> */}
-{/* <LifeCycle/> */}
-<UpdatingPhase/>
+       {/* <Counter/> */}
+    {/* <UserForm/> */}
+    {/* <EvenOddChecker/> */}
+    {/* <Todolist/> */}
+    {/* <LifeCycle/> */}
+    {/* <UpdatingPhase /> */}
+    {/* <FunctionalCounter/> */}
+    <Calculator/>
   </React.StrictMode>
 );
 
