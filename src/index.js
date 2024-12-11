@@ -268,7 +268,7 @@ root.render(
         />
       );
     })}  */}
-    <ToggleButton/>
+    {/* <ToggleButton/> */}
        {/* <Counter/> */}
     {/* <UserForm/> */}
     {/* <EvenOddChecker/> */}
@@ -276,7 +276,7 @@ root.render(
     {/* <LifeCycle/> */}
     {/* <UpdatingPhase /> */}
     {/* <FunctionalCounter/> */}
-    {/* <Calculator/> */}
+    <Calculator/>
     {/* <IDCard/> */}
     {/* <FormEvents/> */}
   </React.StrictMode>
