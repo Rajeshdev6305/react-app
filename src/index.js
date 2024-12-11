@@ -20,6 +20,7 @@ import Todolist from "./Todolistcomponent/Todolist";
 import UpdatingPhase from "./UpdatingPhase/UpdatingPhase";
 import FunctionalCounter from "./FunctionalCounter/FunctionalCounter";
 import Calculator from "./Calculator/Calculator";
+import FormEvents from "./Portfolio/FormEvents/FormEvents";
 
 const products = [
   [
@@ -267,7 +268,7 @@ root.render(
         />
       );
     })}  */}
-    {/* <ToggleButton/> */}
+    <ToggleButton/>
        {/* <Counter/> */}
     {/* <UserForm/> */}
     {/* <EvenOddChecker/> */}
@@ -275,7 +276,9 @@ root.render(
     {/* <LifeCycle/> */}
     {/* <UpdatingPhase /> */}
     {/* <FunctionalCounter/> */}
-    <Calculator/>
+    {/* <Calculator/> */}
+    {/* <IDCard/> */}
+    {/* <FormEvents/> */}
   </React.StrictMode>
 );
 

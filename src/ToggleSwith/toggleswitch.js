@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './toggleswitch.css'; 
 
 class ToggleButton extends Component {
   constructor(props) {
@@ -9,7 +10,6 @@ class ToggleButton extends Component {
     };
   }
 
-  
   toggleSwitch = () => {
     this.setState(prevState => ({
       isOn: !prevState.isOn
@@ -18,9 +18,11 @@ class ToggleButton extends Component {
 
   render() {
     return (
-      <div>
-        <button onClick={this.toggleSwitch}>
-          {this.state.isOn ? 'Switch Off' : 'Switch On'}
+      <div className="toggle-container">
+        <button 
+          onClick={this.toggleSwitch} 
+          className={this.state.isOn ? 'on' : 'off'}>
+          <span>{this.state.isOn ? 'Switch Off' : 'Switch On'}</span>
         </button>
 
         <p>The button is {this.state.isOn ? 'On' : 'Off'}</p>
