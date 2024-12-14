@@ -1,5 +1,5 @@
 import { Component } from "react";
-import ProfileCard from "../ProfileCard/profilecard";
+import ProfileCard from "./profilecard";
 
 const data = [
   [

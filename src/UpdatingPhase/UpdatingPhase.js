@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
-import ProfileCard from "../ProfileCard/profilecard";
-import Loader from "./Loader";
+import ProfileCard from "../Portfolio/profilecard";
+import Loader from "../Loader";
 
 class UpdatingPhase extends Component {
   constructor() {

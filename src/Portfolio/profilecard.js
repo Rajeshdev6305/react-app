@@ -15,6 +15,7 @@ function ProfileCard(props) {
         <Card.Img variant="top" style={{ height: "170px" }} src={props.img} />
         <Card.Body style={{ height: "150px", overflowY: "scroll" }}>
           <Card.Title>{props.title}</Card.Title>
+
           <Card.Text>{props.desc}</Card.Text>
         </Card.Body>
         <Card.Footer className="text-muted">

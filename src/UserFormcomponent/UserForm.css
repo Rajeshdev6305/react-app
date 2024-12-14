@@ -51,7 +51,8 @@
   .result {
     margin-top: 20px;
     padding: 15px;
-    background-color: #3b3b3b;
+    display: block;
+    background-color:#4caf50;
     color: #11dd14;
     border-radius: 4px;
   }

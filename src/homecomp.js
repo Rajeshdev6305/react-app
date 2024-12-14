@@ -1,5 +1,5 @@
 import { Component } from "react";
-import FOOTER from "./Portfolio/footercomp";
+import FOOTER from "./footercomp";
 import HEADER from "./headercomp";
 import MAIN from "./Portfolio/maincomp";
 import ACcordion from "./Accordioncomponent/accordioncomp";
