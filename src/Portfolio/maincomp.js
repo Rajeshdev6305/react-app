@@ -1,5 +1,6 @@
 import { Component } from "react";
 import ProfileCard from "./profilecard";
+import DRC from "../Dynamic.Router/DRC";
 
 const data = [
   [
@@ -253,6 +254,8 @@ const data = [
 //   );
 // }
 
+
+
 // function MAIN() {
 //   return (
 //     <div>
@@ -291,6 +294,39 @@ const data = [
 //     </div>
 //   );
 // }
+
+
+// class MAIN extends Component {
+//   render() {
+//     return (
+//       <div 
+//         style={{
+//           backgroundColor:"aqua",
+//           display: "flex",
+//           flexWrap: "wrap",
+//           gap: "20px",
+//           justifyContent: "center",
+//           alignItems: "center",
+//         }}
+//       >
+//         {data.flat().map((a, b) => {
+//           return (
+//             <ProfileCard
+//             id={a.id}
+//               title={a.title}
+//               price={a.price}
+//               desc={a.description}
+//               info={a.category}
+//               img={a.image}
+//             />
+//           );
+//         })}
+//       </div>
+//     );
+//   }
+// }
+
+
 class MAIN extends Component {
   render() {
     return (
@@ -306,8 +342,10 @@ class MAIN extends Component {
       >
         {data.flat().map((a, b) => {
           return (
-            <ProfileCard
+            <DRC
+            id={a.id}
               title={a.title}
+              price={a.price}
               desc={a.description}
               info={a.category}
               img={a.image}

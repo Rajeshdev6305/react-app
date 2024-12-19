@@ -42,14 +42,14 @@ root.render(
     {/* <EvenOddChecker/>*/}
     {/* <Todolist/>  */}
     {/* <LifeCycle/> */}
-    {/* <UpdatingPhase /> */}
+    <UpdatingPhase />
     {/* <FunctionalCounter/> */}
     {/* <Calculator/>  */}
     {/* <FormEvents/>  */}
     {/* <LoginApi/> */}
     {/* <COUNTER/> */}
     {/* <UseEffect/> */}
-    <AppRouter />
+    {/* <AppRouter /> */}
   </React.StrictMode>
 );
 

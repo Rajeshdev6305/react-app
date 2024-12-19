@@ -12,14 +12,14 @@ function ProfileCard(props) {
           borderColor: "2px solid black",
         }}
       >
-        <Card.Img variant="top" style={{ height: "170px" }} src={props.img} />
-        <Card.Body style={{ height: "150px", overflowY: "scroll" }}>
-          <Card.Title>{props.title}</Card.Title>
-
+          <Card.Img variant="top" style={{ height: "170px" }} src={props.img} />
+           <Card.Body style={{ height: "150px", overflowY: "scroll" }}>
+                <Card.Title>{props.title}</Card.Title>
           <Card.Text>{props.desc}</Card.Text>
         </Card.Body>
         <Card.Footer className="text-muted">
           <Button variant="primary">{props.info}</Button>
+          <Button variant="primary">back</Button>
         </Card.Footer>
       </Card>
     </div>
@@ -27,3 +27,5 @@ function ProfileCard(props) {
 }
 
 export default ProfileCard;
+
+
